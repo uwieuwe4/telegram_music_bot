@@ -63,8 +63,6 @@ def main():
     elif last_chat_text.lower() in greetings and today == now.day and 17 <= hour < 23:
         greet_bot.send_message(last_chat_id, 'Good Evening  {}'.format(last_chat_name))
         today += 1
-
-
     else:
         greet_bot.send_message(last_chat_id, 'No HELLO  {}'.format(last_chat_name))
         today += 1
