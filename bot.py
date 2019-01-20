@@ -4,6 +4,7 @@ from time import sleep
 url = "https://api.telegram.org/bot716693144:AAHDS5p6tdGB-REJT_K4bkeZhO27fpSEfuM/"
 token = "716693144:AAHDS5p6tdGB-REJT_K4bkeZhO27fpSEfuM"
 
+
 class BotHandler:
 
     def __init__(self, token):
@@ -32,12 +33,11 @@ class BotHandler:
             last_update = get_result[len(get_result)]
         return last_update
 
+
+def main():
     greet_bot = BotHandler(token)
     greetings = ('hello', 'hi', 'greetings', 'sup')
     now = datetime.datetime.now()
-
-
-def main():
     new_offset = None
     today = now.day
     hour = now.hour
