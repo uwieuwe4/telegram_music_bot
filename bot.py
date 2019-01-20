@@ -39,13 +39,13 @@ now = datetime.datetime.now()
 
 
 def main():
-    new_offset = None
-    today = now.day
-    hour = now.hour
+new_offset = None
+today = now.day
+hour = now.hour
 
 
 while True:
-        greet_bot.get_updates(new_offset)
+    greet_bot.get_updates(new_offset)
 
 last_update = greet_bot.get_last_update()
 
